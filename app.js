@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const i18n = require("i18n");
 
+require('dotenv').config({ path: 'variables.env' });
 const config = require('./config');
 
 const routes = require('./routes/index');
@@ -25,7 +26,7 @@ app.use(i18n.init);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
