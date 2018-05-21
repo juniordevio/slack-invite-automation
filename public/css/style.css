@@ -12,28 +12,28 @@ overflow: hidden;
 }
 
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
-	background: linear-gradient(140deg, #ffbf1e, #de1aff, #25f18d);
-	background-size: 600% 600%;
-	animation: GradientBg 49s ease infinite;;
-	min-height: 100vh;
+  background: linear-gradient(140deg, #ffbf1e, #de1aff, #25f18d);
+  background-size: 600% 600%;
+  animation: GradientBg 49s ease infinite;;
+  min-height: 100vh;
 }
 
 @keyframes GradientBg {
-	0% {
-		background-position: 9% 0%;
-	}
+  0% {
+  background-position: 9% 0%;
+  }
 
-	50% {
-		background-position: 92% 100%;
-	}
+  50% {
+  background-position: 92% 100%;
+  }
 
-	100% {
-		background-position: 9% 0%;
-	}
+  100% {
+  background-position: 9% 0%;
+  }
 }
 
 #wrapper{
@@ -43,52 +43,52 @@ margin: 0 auto;
 }
 
 .main{
-	max-width: 100%;
-	width: 940px;
+  max-width: 100%;
+  width: 940px;
 }
 
 .header,
 .content,
 .bottom,
 .sep2{
-	width: 100%;
+  width: 100%;
 }
 
 .header{
-	margin-top: 160px;
-	margin-bottom: 40px;
+  margin-top: 160px;
+  margin-bottom: 40px;
 }
 
 h1{
-	margin: 0;
-	padding: 0;
-	color: transparent;
-	font-size: 0;
-	display: block;
-	width: 100%;
-	text-align: center;
-	padding-bottom: 28px;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 28px;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
-	display: inline-block;
+  display: inline-block;
 }
 
 .footer-wrap {
-	display: block;
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 70px;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .levels-logo-wrap {
-	display: inline-block;
-	max-width: 200px;
+  display: inline-block;
+  max-width: 200px;
 }
 
 
@@ -98,22 +98,22 @@ font-weight: 700;
 }
 
 h2{
-	text-align: center;
-	font-weight: 300;
-	font-size: 20px;
-	color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
 
 }
 
 h2 strong{
-	font-weight: 700;
-	font-style: italic;
+  font-weight: 700;
+  font-style: italic;
 }
 
 
 .information{
-	width: 480px;
-	margin: 0 auto;
+  width: 480px;
+  margin: 0 auto;
 }
 
 h3{
@@ -147,23 +147,23 @@ padding: 15px;
 margin-bottom: 15px;
 outline: none;
 }
-	.field:focus {
-	border: 1px solid #ffffff;
-	padding: 14px;
-	}
+  .field:focus {
+  border: 1px solid #ffffff;
+  padding: 14px;
+  }
 @media only screen and (max-width: 480px)  {
-	.information{
-	width: 100%;
-	}
-	.form{
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	}
+  .information{
+  width: 100%;
+  }
+  .form{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
 
-	.field {
-	width: 90%;
-	}
+  .field {
+  width: 90%;
+  }
 }
 
 .submit{
