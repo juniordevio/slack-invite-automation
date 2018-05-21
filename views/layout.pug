@@ -10,13 +10,16 @@ html
     #wrapper
       .main
         .header
-          .logo-wrap
-            a(href="http://juniordev.io")
-              h1
-                img.logo(src=`/images/logo_primary.svg` alt='Junior Dev')
+          a.logo-wrap(href="http://juniordev.io")
+            h1
+              img.logo(src=`/images/logo_primary.svg` alt='Junior Dev')
           block header
             h2 #{__('HEADER', community)}
 
         .content
           block content
 
+        .footer-wrap
+          block footer
+            a.levels-logo-wrap(href="http://levelsconf.com" target="_blank")
+              img.logo(src=`/images/levelslogo.svg` alt='Levels Conf')
