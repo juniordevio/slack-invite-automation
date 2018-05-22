@@ -1,5 +1,6 @@
-Slack Invite Automation
+Slack Invite Automation :robot:
 ------------
+(Forked by David James for Junior Dev)
 
 A tiny web application to invite a user into your Slack team.
 

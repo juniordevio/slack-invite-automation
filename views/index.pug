@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .information
+    form(method="POST", action="/invite")#join-form.form
+      input(type="email", name="email", autofocus, placeholder="Email Here")#slack-email.field
+      if tokenRequired
+        input(type="text", name="token", placeholder="Token here")#slack-token.field
+      input(type="submit", value="Join").submit
+      if !!recaptchaSiteKey
+        div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
+      if !!recaptchaSiteKey
+          script(src='https://www.google.com/recaptcha/api.js')
+      script.
+        var tokenRequired = #{tokenRequired};
+        var form = document.getElementById('join-form');
+        var email = document.getElementById('slack-email');
+        var token = document.getElementById('slack-token');
+        form.addEventListener('submit', function(evt) {
+          if (!email.value) {
+            evt.preventDefault();
+          }
+          if (tokenRequired && !token.value) {
+            evt.preventDefault();
+          }
+        });
