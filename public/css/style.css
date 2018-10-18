@@ -164,6 +164,17 @@ outline: none;
   .field {
   width: 90%;
   }
+  .submit {
+    padding: 12px 60px !important;
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+  #join-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .submit{
