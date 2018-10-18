@@ -184,7 +184,8 @@ text-transform: uppercase;
 
 
 .submit:hover{
-background: #eeeeee;
+background: #f9f9f9;
+color: #69F0AE;
 }
 
 .error {
